@@ -9,7 +9,7 @@ change events on a store.
 var StoreWatchMixin = require('./mixins/store_watch_mixin');
 var MyStore = require('./my_store');
 
-var Component = React.creteClass({
+var Component = React.createClass({
   mixins: [StoreWatchMixin(MyStore)],
 
   render: function() {...}
