@@ -9,7 +9,8 @@ var StoreWatchMixin = function(stores, options) {
   return {
     componentDidMount: function() {
       if (!this[options.handlerName]) {
-        console.log("WARNING: The handler required for the store listener was not found.");
+        throw new Error("Handler not found on the view. " +
+          "Handler with name: [" + options.handlerName + "] expected to be defined on the view.");
       }
 
       stores.forEach(function(store) {
