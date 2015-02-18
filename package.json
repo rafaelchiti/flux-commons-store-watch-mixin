@@ -1,6 +1,6 @@
 {
   "name": "flux-commons-store-watch-mixin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple mixin for binding your component to the store changes",
   "main": "dist/store_watch_mixin.js",
   "scripts": {
